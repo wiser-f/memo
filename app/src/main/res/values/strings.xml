@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">memo</string>
+    <string name="app_name">メモ一覧</string>
+    <string name="hint_title">タイトル</string>
+    <string name="hint_content">内容</string>
+
 </resources>

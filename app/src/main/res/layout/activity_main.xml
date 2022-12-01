@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <!-- A RecyclerView with some commonly used attributes -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:rippleColor="#FF19FF"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <!--<item
+        android:id="@+id/action_add"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/action_add"
+        android:icon="@android:drawable/ic_menu_add"
+        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

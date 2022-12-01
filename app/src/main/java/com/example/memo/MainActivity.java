@@ -1,5 +1,6 @@
 package com.example.memo;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //ツールバー　タイトル表記
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("最初の画面だよ");
+        }
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
 
         // use this setting to improve performance if you know that changes
@@ -35,4 +41,18 @@ public class MainActivity extends AppCompatActivity {
         MyAdapter adapter = new MyAdapter(dataset);
         recyclerView.setAdapter(adapter);
     }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.action_add:
+                //　[追加] 選択時の処理
+                break;
+            default:
+                break;
+        }
+
+        return super.onMenuItemSelected(featureId, item);
+    }
+
 }
