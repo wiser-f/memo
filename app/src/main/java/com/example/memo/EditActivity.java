@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.os.Bundle;
 import android.view.Menu;
 
+//macから入力　2022/12/9
+
 public class EditActivity extends AppCompatActivity {
 
     @Override
